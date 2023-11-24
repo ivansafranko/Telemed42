@@ -2,7 +2,6 @@ h1 {font-size: 42px;
   font-weight: bold;
 }
 
-#username,
-#password {
+input {
     width: 90%;
 }
