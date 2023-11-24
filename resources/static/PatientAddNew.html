@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kreiranje novog korisnika</title>
 </head>
 <body>
-
+<h1>Kreiranje novog korisnika</h1>
+<form>
+    <label for="ime_novog_korisnika">Unesi ime novog korisnika:</label><br>
+    <input type="text" id="ime_novog_korisnika"><br>
+    <label for="prezime_novog_korisnika">Unesi prezime novog korisnika:</label><br>
+    <input type="text" id="prezime_novog_korisnika"><br>
+    <label for="oib_novog_korisnika">Unesi OIB novog korisnika:</label><br>
+    <input type="text" id="oib_novog_korisnika"><br>
+    <label for="datum_rodenja_novog_korisnika">Unesi datum rodenja novog korisnika:</label><br>
+    <input type="date" id="datum_rodenja_novog_korisnika"><br>
+    <button name="kreiraj" type="button" onclick="createNewPatient()">Kreiraj novog korisnika</button>
+    <button name="pregled" type="button" onclick="printPatients()">Pregled korisnika</button>
+</form>
 </body>
 </html>
