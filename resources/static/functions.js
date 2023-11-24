@@ -11,3 +11,11 @@ function login(){
         alert ("Wrong username or password! Please try again.");
     }
 }
+
+function submitNewReading() {
+
+}
+
+function viewHistory() {
+    window.location.href = "PatientHistory.html";
+}
