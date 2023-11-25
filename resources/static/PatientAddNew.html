@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Kreiranje novog korisnika</h1>
+<div class="container">
+<nav  class="navbar navbar-dark" style="background-color: #0d6e29;">
+    <h1>Kreiranje novog korisnika</h1>
+</nav>
 <form>
     <label for="ime_novog_korisnika">Unesi ime novog korisnika:</label><br>
     <input type="text" id="ime_novog_korisnika"><br>
@@ -19,8 +22,9 @@
     <input type="text" id="oib_novog_korisnika"><br>
     <label for="datum_rodenja_novog_korisnika">Unesi datum rodenja novog korisnika:</label><br>
     <input type="date" id="datum_rodenja_novog_korisnika"><br>
-    <button name="kreiraj" type="button" onclick="createNewPatient()">Kreiraj novog korisnika</button>
-    <button name="pregled" type="button" onclick="printPatients()">Pregled korisnika</button>
+    <button name="kreiraj" class="btn btn-success" type="button" onclick="createNewPatient()">Kreiraj novog korisnika</button>
+    <button name="pregled" class="btn btn-success" type="button" onclick="printPatients()">Pregled korisnika</button>
 </form>
+</div>
 </body>
 </html>
