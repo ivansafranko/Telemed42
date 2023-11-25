@@ -7,17 +7,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
-    <script src="functions.js"></script>
-
     <title>Patient Telemed</title>
 </head>
 
 <body>
 <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d6e29;">
+    <nav class="navbar navbar-dark" style="background-color: #0d6e29;">
         <h1>Unos stanja</h1>
-        <img src="account_logo.png" alt="Darko Mihić" style="width: 50px; height: 50px;">
+        <div class="ms-auto">
+            <img src="account_logo.png" alt="Darko Mihić" style="width: 40px; height: 40px; margin-left: 25px;">
+            <p class="text-dark"><span class="bold-text">Darko Mihić</span></p>
+        </div>
     </nav>
 
     <div>
@@ -29,8 +30,8 @@
             <label for="diastolic">Dijastolički tlak:</label><br>
             <input type="number" id ="diastolic" placeholder="Unesi svoj dijastolički tlak"><br>
 
-            <label for="heartrate">Otkucaji srca:</label><br>
-            <input type="number" id ="heartrate" placeholder="Unesi svoj puls"><br>
+            <label for="heart_rate">Otkucaji srca:</label><br>
+            <input type="number" id ="heart_rate" placeholder="Unesi svoj puls"><br>
 
             <label for="description">Opis stanja:</label><br>
             <input type="text" id ="description" placeholder="Unesi opis svog stanja"><br>
@@ -43,5 +44,6 @@
     </div>
 
 </div>
+<script defer src="functions.js"></script>
 </body>
 </html>
