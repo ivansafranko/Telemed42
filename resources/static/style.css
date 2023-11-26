@@ -6,3 +6,14 @@ h1 {font-size: 42px;
 input {
     width: 90%;
 }
+
+.hospital-dark {
+    background-color: #0d6e29;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table td {
+  vertical-align: bottom;
+}
