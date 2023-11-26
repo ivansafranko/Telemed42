@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/static/PatientReadingsEntry.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientReadingsEntry.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1701015156981</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="login.html - prijevod na hrvatski">
+      <option name="closed" value="true" />
+      <created>1701017855567</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1701017855567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +124,7 @@
     <MESSAGE value="Dovršen izgled PatientsList.html" />
     <MESSAGE value="Preimenovana datoteka PatientHistory.html" />
     <MESSAGE value="razmaci PatientReadingsEntry.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="razmaci PatientReadingsEntry.html" />
+    <MESSAGE value="login.html - prijevod na hrvatski" />
+    <option name="LAST_COMMIT_MESSAGE" value="login.html - prijevod na hrvatski" />
   </component>
 </project>
