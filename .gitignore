@@ -2,8 +2,8 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-/Telemed/.idea/Telemed.iml
-/Telemed/.idea/workspace.xml
+.idea/Telemed.iml
+.idea/workspace.xml
 
 ### Eclipse ###
 .apt_generated
