@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/static/PatientReadingsEntry.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientReadingsEntry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +117,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1701019699290</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="stil za logout premješten u css">
+      <option name="closed" value="true" />
+      <created>1701019940903</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1701019940903</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +145,7 @@
     <MESSAGE value="login.html - prijevod na hrvatski" />
     <MESSAGE value="logout" />
     <MESSAGE value="razmak" />
-    <option name="LAST_COMMIT_MESSAGE" value="razmak" />
+    <MESSAGE value="stil za logout premješten u css" />
+    <option name="LAST_COMMIT_MESSAGE" value="stil za logout premješten u css" />
   </component>
 </project>
