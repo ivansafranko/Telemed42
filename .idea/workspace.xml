@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/PatientAddNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientAddNew.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +120,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701020843997</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="kreiranje novog korisnika u redu s gumbima">
+      <option name="closed" value="true" />
+      <created>1701021456781</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701021456781</updated>
+    </task>
+    <task id="LOCAL-00011" summary="dodan novi red">
+      <option name="closed" value="true" />
+      <created>1701021584283</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701021584283</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +188,8 @@
     <MESSAGE value="logout" />
     <MESSAGE value="razmak" />
     <MESSAGE value="sad skoro i dobro izgleda" />
-    <option name="LAST_COMMIT_MESSAGE" value="sad skoro i dobro izgleda" />
+    <MESSAGE value="kreiranje novog korisnika u redu s gumbima" />
+    <MESSAGE value="dodan novi red" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodan novi red" />
   </component>
 </project>
