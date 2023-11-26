@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/static/PatientAddNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientAddNew.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,12 +113,50 @@
       <option name="project" value="LOCAL" />
       <updated>1701020526176</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sad skoro i dobro izgleda">
+      <option name="closed" value="true" />
+      <created>1701020843997</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701020843997</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="17805b5d-7bd7-446a-a7c0-fc11d18e7ad5" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="17805b5d-7bd7-446a-a7c0-fc11d18e7ad5">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Telemed/resources/static" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -134,6 +172,7 @@
     <MESSAGE value="login.html - prijevod na hrvatski" />
     <MESSAGE value="logout" />
     <MESSAGE value="razmak" />
-    <option name="LAST_COMMIT_MESSAGE" value="razmak" />
+    <MESSAGE value="sad skoro i dobro izgleda" />
+    <option name="LAST_COMMIT_MESSAGE" value="sad skoro i dobro izgleda" />
   </component>
 </project>
