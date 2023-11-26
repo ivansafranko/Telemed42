@@ -3,6 +3,10 @@ h1 {font-size: 42px;
   color: white;
 }
 
+input {
+    width: 90%;
+}
+
 .hospital-dark {
     background-color: #0d6e29;
     color: white;
