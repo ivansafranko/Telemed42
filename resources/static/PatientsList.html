@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Popis pacijenata</title>
     <meta charset="UTF-8">
 
+    <script src="functions.js"></script>
+
+    <title>Popis pacijenata</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
@@ -22,7 +24,7 @@
                 <a class="nav-link" href="#" style="color: white;">Pregled popisa pacijenata</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white;">Unos novog pacijenta</a>
+                <a class="nav-link" href="PatientAddNew.html" style="color: white;">Unos novog pacijenta</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" style="color: white;">Pregled mjerenja</a>
@@ -38,7 +40,7 @@
 
 <div class="container mt-3">
     <h2 style="background-color: #0d6e29; color: white; padding: 10px;">Pregled popisa pacijenata</h2>
-    <table class="table">
+    <table id="patients_list" class="table">
         <thead>
         <tr>
             <th>Prezime</th>
@@ -50,6 +52,18 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>Darko</td>
+            <td>Mihić</td>
+            <td>62759312785</td>
+            <td>09.05.1945</td>
+            <td>
+                <button class="btn btn-success" onclick="viewHistory()">Prikaz</button>
+            </td>
+            <td>
+                <button class="btn btn-success">Uredi</button>
+            </td>
+        </tr>
         <tr>
             <td>Šućro</td>
             <td>Uščumlić</td>
