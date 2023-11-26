@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="Preimenovana datoteka PatientHistory.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/PatientHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientHistory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/PatientsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientsList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/style.css" afterDir="false" />
+    <list default="true" id="38890b57-6ad9-4eb3-8a90-4be55033debc" name="Changes" comment="razmaci PatientReadingsEntry.html">
+      <change beforePath="$PROJECT_DIR$/resources/static/PatientReadingsEntry.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/PatientReadingsEntry.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
