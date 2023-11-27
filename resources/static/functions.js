@@ -20,6 +20,7 @@ function printPatients() {
     window.location.href = "PatientsList.html";
 }
 
+/*
 function submitNewReading() {
 
     var table = document.getElementById("pregled_stanja_table");
@@ -79,4 +80,4 @@ function createNewPatient() {
     document.querySelector('form').reset();
 
 }
-
+*/
