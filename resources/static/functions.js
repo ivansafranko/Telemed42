@@ -3,9 +3,9 @@ function login(){
     var password = document.getElementById("password").value;
 
 
-    if (username == "Dr.Med.PlasicFantastic" && password == "12345"){
+    if (username == "Doktor" && password == "123"){
         window.location.href = "PatientHistory.html";
-    } else if (username == "Marko_Mihic" && password == "1234"){
+    } else if (username == "Marko_Mihic" && password == "123"){
         window.location.href = "PatientReadingsEntry.html";
     } else {
         alert ("Wrong username or password! Please try again.");
