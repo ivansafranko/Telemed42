@@ -13,21 +13,22 @@
 
 </head>
 <body style="background-color: #daffb3;">
-<div class="container"><br>
+<div class="container mt-5">
 
-        <h1>Telemed Prijava</h1>
+        <h1 class="text-center">Telemed Prijava</h1>
 
 
-    <div>
+    <div class="row justify-content-center">
         <form class = "col-sm-12 col-md-8 col-lg-4">
 
-            <br>
-            <label for="username">Korisničko ime:</label><br><br>
-            <input type="text" id ="username" placeholder="Unesi svoje korisničko ime"><br><br>
-
-            <label for="password">Lozinka:</label><br><br>
-            <input type="password" id ="password" placeholder="Unesi svoju lozinku"><br><br>
-            <br>
+            <div class="mb-3">
+                <label for="username" class="form-label">Korisničko ime:</label>
+                <input type="text" class="form-control" id="username" placeholder="Unesi svoje korisničko ime">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Lozinka:</label>
+                <input type="password" class="form-control"  id="password" placeholder="Unesi svoju lozinku">
+            </div>
 
             <button name="button" class="btn btn-success" type="button" onclick="login()">Prijava</button>
 
