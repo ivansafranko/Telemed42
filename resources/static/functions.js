@@ -5,7 +5,7 @@ function login(){
 
     if (username == "Doktor" && password == "123"){
         window.location.href = "PatientHistory.html";
-    } else if (username == "Pero Deformero" && password == "123"){
+    } else if (username == "Pero Deformero" && password == "456"){
         window.location.href = "PatientReadingsEntry.html";
     } else {
         alert ("Wrong username or password! Please try again.");
