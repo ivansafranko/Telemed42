@@ -4,7 +4,7 @@ function login(){
 
 
     if (username == "Doktor" && password == "123"){
-        window.location.href = "PatientHistory.html";
+        window.location.href = "PatientsList.html";
     } else if (username == "Pero Deformero" && password == "456"){
         window.location.href = "PatientReadingsEntry.html";
     } else {
@@ -13,7 +13,7 @@ function login(){
 }
 
 function viewHistory() {
-    window.location.href = "PatientHistory.html";
+    window.location.href = "PatientHistoryForDoctor.html";
 }
 
 function printPatients() {
