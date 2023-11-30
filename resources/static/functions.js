@@ -8,7 +8,7 @@ function login(){
     } else if (username == "Pero Deformero" && password == "456"){
         window.location.href = "PatientReadingsEntry.html";
     } else {
-        alert ("Wrong username or password! Please try again.");
+        alert ("Krivo korisničko ime ili lozinka!");
     }
 }
 
