@@ -1,20 +1,45 @@
-package com.telemed;
+package com.telemed.model;
 
 import java.util.Date;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
-abstract class Person {
+@Entity(name="APP_USER")
+public class User {
+    static long idCounter = 0;
+
+    @Id
+    @GeneratedValue
+    Long id;
+    int type = 0; // 0 - patient, 1 - doctor
     protected String firstName;
     protected String lastName;
     protected String OIB;
     protected Date dateOfBirth;
-    protected String username;
+    protected String email;
     protected String password;
 
-    public Person(String firstName, String lastName, String OIB, Date dateOfBirth) {
+    public User() {
+    }
+
+    public User(String firstName, String lastName, String OIB, Date dateOfBirth, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.OIB = OIB;
         this.dateOfBirth = dateOfBirth;
+        this.email = email;
+        this.password = password;
+
+        id = idCounter++;
+    }
+
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+
+        id = idCounter++;
     }
 
     public String getFirstName() {
@@ -49,12 +74,12 @@ abstract class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getUsername() {
-        return username;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
@@ -63,6 +88,18 @@ abstract class Person {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
 

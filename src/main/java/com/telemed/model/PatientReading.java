@@ -1,13 +1,25 @@
-package com.telemed;
+package com.telemed.model;
 
 import java.util.*;
+import jakarta.persistence.*;
 
+@Entity
 public class PatientReading {
+    @Id
+    @GeneratedValue
+    private Long id;
     int systolicBloodPressure;
     int diastolicBloodPressure;
     int heartBeat;
     String note;
     Date date;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    public PatientReading() {
+    }
 
     public PatientReading(int systolicBloodPressure, int diastolicBloodPressure, int heartBeat, String note, Date date) {
         this.systolicBloodPressure = systolicBloodPressure;
@@ -55,5 +67,9 @@ public class PatientReading {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
