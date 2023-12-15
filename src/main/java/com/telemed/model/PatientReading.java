@@ -18,8 +18,7 @@ public class PatientReading {
     @JoinColumn(name = "user_id")
     private User user;
 
-    public PatientReading() {
-    }
+    public PatientReading() {}
 
     public PatientReading(int systolicBloodPressure, int diastolicBloodPressure, int heartBeat, String note, Date date) {
         this.systolicBloodPressure = systolicBloodPressure;
