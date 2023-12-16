@@ -71,15 +71,16 @@
     </nav>
     <h1 class="mt-5">Unos novog pacijenta</h1>
     <br>
-    <form th:action="@{/addPatient}" th:object="${patient}" method="post" class = "col-sm-12 col-md-8 col-lg-4">
+    <form th:action="@{/addPatient}" th:object="${app_user}" method="post" class = "col-sm-12 col-md-8 col-lg-4">
         <label for="ime_novog_korisnika" class="form-label">Ime:</label><br>
-        <input type="text" id="ime_novog_korisnika" class="form-control" th:field="*{first_name}"><br>
+        <input type="text" id="ime_novog_korisnika" class="form-control" th:field="*{firstName}"><br>
         <label for="prezime_novog_korisnika" class="form-label">Prezime:</label><br>
-        <input type="text" id="prezime_novog_korisnika" class="form-control" th:field="*{last_name}"><br>
+        <input type="text" id="prezime_novog_korisnika" class="form-control" th:field="*{lastName}"><br>
         <label for="oib_novog_korisnika" class="form-label">OIB:</label><br>
-        <input type="text" id="oib_novog_korisnika" class="form-control" th:field="*{oib}"><br>
+        <input type="text" id="oib_novog_korisnika" class="form-control" th:field="*{OIB}"><br>
         <label for="datum_rodenja_novog_korisnika" class="form-label">Datum rođenja:</label><br>
-        <input type="date" id="datum_rodenja_novog_korisnika" class="form-control" th:field="*{date_of_birth}"><br>
+        <input type="date" id="datum_rodenja_novog_korisnika" class="form-control" th:field="*{dateOfBirth}"><br>
+        <input type="hidden" th:field="*{type}" value="0">
         <br>
         <button name="kreiraj" class="btn btn-success" type="submit" onclick="objava()">Predaj zapis</button>
     </form>

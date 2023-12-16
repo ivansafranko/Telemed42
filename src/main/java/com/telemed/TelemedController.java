@@ -28,8 +28,7 @@ public class TelemedController {
     @Autowired
     PatientReadingRepository patientReadingRepository;
 
-    @Autowired
-    PatientRepository patientRepository;
+
 
 //    @GetMapping("/init")
 //    String init() {
@@ -52,15 +51,14 @@ public class TelemedController {
 
     @GetMapping("/addPatient")
     public String showAddPatientForm(Model model) {
-        model.addAttribute("patient", new Patient());
+        model.addAttribute("app_user", new User());
         return "PatientAddNew";
     }
 
     @PostMapping("/addPatient")
-    public String addPatient(@ModelAttribute Patient patient) {
-        // You might want to set the id to null before saving to ensure it's a new entity
-        patient.setId(null);
-        patientRepository.save(patient);
+    public String addPatient(@ModelAttribute User user) {
+        user.setType(0);
+        userRepository.save(user);
         return "redirect:/patientList";
     }
 

@@ -1,5 +1,6 @@
 package com.telemed.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,14 +18,14 @@ public class User {
     protected String firstName;
     protected String lastName;
     protected String OIB;
-    protected Date dateOfBirth;
+    protected LocalDate dateOfBirth;
     protected String email;
     protected String password;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, String OIB, Date dateOfBirth, String email, String password) {
+    public User(String firstName, String lastName, String OIB, LocalDate dateOfBirth, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.OIB = OIB;
@@ -66,11 +67,11 @@ public class User {
         this.OIB = OIB;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -100,6 +101,10 @@ public class User {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
 
