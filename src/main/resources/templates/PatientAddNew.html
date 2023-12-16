@@ -81,8 +81,10 @@
         <label for="datum_rodenja_novog_korisnika" class="form-label">Datum rođenja:</label><br>
         <input type="date" id="datum_rodenja_novog_korisnika" class="form-control" th:field="*{date_of_birth}"><br>
         <br>
-        <button name="kreiraj" class="btn btn-success" type="submit">Predaj zapis</button>
+        <button name="kreiraj" class="btn btn-success" type="submit" onclick="objava()">Predaj zapis</button>
     </form>
+    <script>function objava(){
+    alert ("Uspjesno je izvrsena CRUD operacija. Od CRUDa odpala ti muda.");}</script>
 </div>
 </body>
 </html>
