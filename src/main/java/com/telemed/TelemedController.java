@@ -82,6 +82,11 @@ public class TelemedController {
 
         return "redirect:/patientReadings";
     }
+    @GetMapping("/deletePatientEntry")
+    public String deletePatientEntry(Long id) {
+        patientReadingRepository.deleteById(id);
+        return "redirect:/patientReadings";
+    }
 }
 
 
