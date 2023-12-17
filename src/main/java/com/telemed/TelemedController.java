@@ -45,6 +45,11 @@ public class TelemedController {
 //        return "login.html";
 //    }
 
+    @GetMapping("/logoutProcess")
+    public String logoutProcess(){
+        return "redirect:/login";
+    }
+
     @GetMapping("/login")
     public String showLogin() {
         return "login.html";
@@ -88,5 +93,3 @@ public class TelemedController {
         return "redirect:/patientReadings";
     }
 }
-
-
