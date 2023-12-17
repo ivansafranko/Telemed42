@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
 
-    <script src="functions.js"></script>
+    <script src="../static/functions.js"></script>
 
     <title>Pregled mjerenja</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,12 +23,12 @@
                 <a class="nav-link btn-link text-nowrap" href="PatientsList.html">Pregled popisa pacijenata</a>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link btn-link login-margina text-nowrap" href="PatientReadingsEntry.html">Unos novog mjerenja</a>
+                <a class="nav-link btn-link login-margina text-nowrap" href="/patientReadingEntry">Unos novog mjerenja</a>
             </li>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link btn-link login-margina" href="login.html">Odjava</a>
+                <a class="nav-link btn-link login-margina" href="/login">Odjava</a>
             </li>
         </ul>
     </div>
@@ -48,34 +48,26 @@
             <table id="pregled_stanja_table" class="table table-bordered table-responsive-sm mb-4 rounded-table">
                 <thead class="table">
                 <tr>
+                    <th class="text-center" style="width: 5%;">rb.</th>
                     <th class="text-center" style="width: 18%;">Datum i vrijeme</th>
                     <th class="text-center" style="width: 18%;">Sistolički tlak</th>
                     <th class="text-center" style="width: 18%;">Dijastolički tlak</th>
                     <th class="text-center" style="width: 18%;">Otkucaji srca</th>
-                    <th class="text-center" colspan="2" style="width: 60%;">Opis stanja</th>
+                    <th class="text-center" style="width: 60%;">Opis stanja</th>
+                    <th class="text-center" style="width: 18%;">Obriši</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td class="text-center">22.11.2023. 20:00</td>
-                    <td class="text-center">125</td>
-                    <td class="text-center">85</td>
-                    <td class="text-center">65</td>
-                    <td>Osjećam se dobro, ne osjećam bolove</td>
-                </tr>
-                <tr>
-                    <td class="text-center">23.11.2023. 20:00</td>
-                    <td class="text-center">145</td>
-                    <td class="text-center">105</td>
-                    <td class="text-center">95</td>
-                    <td>Osjećam bolove</td>
-                </tr>
-                <tr>
-                    <td class="text-center">23.11.2023. 10:00</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">95</td>
-                    <td class="text-center">65</td>
-                    <td>Osjećam se dobro</td>
+                <tr th:each="item : ${readings}">
+                    <td class="text-center" th:text="${item.id}">1.1.2024.</td>
+                    <td class="text-center" th:text="${item.date}">1.1.2024.</td>
+                    <td class="text-center" th:text="${item.systolicBloodPressure}">125</td>
+                    <td class="text-center" th:text="${item.diastolicBloodPressure}">85</td>
+                    <td class="text-center" th:text="${item.heartBeat}">65</td>
+                    <td class="text-center" th:text="${item.note}">Dobro se osjecam</td>
+                    <td>
+                        <a th:href="@{'/deletePatientEntry?id='+ ${item.id}}"> Obriši</a>
+                    </td>
                 </tr>
                 </tbody>
             </table>

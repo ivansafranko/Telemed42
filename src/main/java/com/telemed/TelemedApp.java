@@ -11,7 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TelemedApp {
 
     public static void main(String[] args) {
-
         SpringApplication.run(TelemedApp.class, args);
         System.out.println("Started on port 9090");
     }
