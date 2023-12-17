@@ -68,9 +68,8 @@ public class TelemedController {
     }
 
     @GetMapping("/logoutProcess")
-    public String logoutProcess(@RequestParam("email") String email, @RequestParam("password") String password, Model model){
-        User u = userRepository.findUserByEmailAndPassword(email,password);
-        return "login.html";
+    public String logoutProcess(){
+        return "redirect:/login";
     }
 
     @GetMapping("/login")
