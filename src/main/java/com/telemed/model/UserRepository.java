@@ -10,9 +10,11 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
     List<User> findByType(int type);
 
-    List<User> findByFirstName(String firstName);
+//    List<User> findByFirstName(String firstName);
 
     User findByEmailAndPassword(String email, String password);
+    User findUserByEmailAndPassword(String email, String password);
+    Iterable<User> findAllByType(int type);
 
     Iterable<User> findAllByType(int type);
 

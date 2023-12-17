@@ -3,7 +3,6 @@ package com.telemed;
 import com.telemed.model.*;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -80,7 +79,7 @@ public class TelemedController {
     public String addPatient(@ModelAttribute User user) {
         user.setType(0);
         userRepository.save(user);
-        return "redirect:/patientList";
+        return "redirect:/users";
     }
 
     @GetMapping("/patientReadings")
