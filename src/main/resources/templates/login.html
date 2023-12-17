@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
 
@@ -19,18 +19,18 @@
 
 
     <div class="row justify-content-center">
-        <form class = "col-sm-12 col-md-8 col-lg-4">
+        <form class = "col-sm-12 col-md-8 col-lg-4 " action="loginProcess">
 
             <div class="mb-3 mt-3">
-                <label for="username" class="form-label">Korisničko ime:</label>
-                <input type="text" class="form-control" id="username" placeholder="Unesi svoje korisničko ime">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Unesi svoj e-mail">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Lozinka:</label>
-                <input type="password" class="form-control"  id="password" placeholder="Unesi svoju lozinku">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Unesi svoju lozinku">
             </div>
 
-            <button name="button" class="btn btn-success" type="button" onclick="login()">Prijava</button>
+            <button name="button" class="btn btn-success" type="submit">Prijava</button>
 
         </form>
     </div>
