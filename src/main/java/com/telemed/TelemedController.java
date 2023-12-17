@@ -67,10 +67,14 @@ public class TelemedController {
     }
     }
 
+    @GetMapping("/logoutProcess")
+    public String logoutProcess(@RequestParam("email") String email, @RequestParam("password") String password, Model model){
+        User u = userRepository.findUserByEmailAndPassword(email,password);
+        return "login.html";
+    }
+
     @GetMapping("/login")
     public String showLogin() {
         return "login.html";
     }
 }
-
-
