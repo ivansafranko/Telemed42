@@ -92,7 +92,7 @@ public class TelemedController {
     public String addPatient(@ModelAttribute User user) {
         user.setType(0);
         userRepository.save(user);
-        return "redirect:/patientList";
+        return "redirect:/users";
     }
 
     @GetMapping("/patientReadings")
