@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
@@ -21,6 +23,9 @@ public class TelemedController {
 
     @Autowired
     PatientReadingRepository patientReadingRepository;
+
+    public TelemedController() {
+    }
 
 //    @GetMapping("/init")
 //    String init() {
@@ -76,4 +81,43 @@ public class TelemedController {
     public String showLogin() {
         return "login.html";
     }
+
+    @GetMapping("/addPatient")
+    public String showAddPatientForm(Model model) {
+        model.addAttribute("app_user", new User());
+        return "PatientAddNew";
+    }
+
+    @PostMapping("/addPatient")
+    public String addPatient(@ModelAttribute User user) {
+        user.setType(0);
+        userRepository.save(user);
+        return "redirect:/patientList";
+    }
+
+    @GetMapping("/patientReadings")
+    public String showPatientReadings(Model model) {
+        model.addAttribute("readings", patientReadingRepository.findAll());
+        return "PatientHistory.html";
+    }
+
+    @GetMapping("/patientReadingEntry")
+    public String showPatientReadingEntry() {
+        return "PatientReadingsEntry.html";
+    }
+
+    @GetMapping("/addNewPatientReading")
+    public String addNewPatientReading (int systolicBloodPressure, int diastolicBloodPressure, int heartBeat, String note) {
+        PatientReading reading = new PatientReading(systolicBloodPressure, diastolicBloodPressure, heartBeat, note, new Date());
+        patientReadingRepository.save(reading);
+
+        return "redirect:/patientReadings";
+    }
+    @GetMapping("/deletePatientEntry")
+    public String deletePatientEntry(Long id) {
+        patientReadingRepository.deleteById(id);
+        return "redirect:/patientReadings";
+    }
 }
+
+
