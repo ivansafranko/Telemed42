@@ -59,8 +59,8 @@
                 </thead>
                 <tbody>
                 <tr th:each="item : ${readings}">
-                    <td class="text-center" th:text="${item.id}">1.1.2024.</td>
-                    <td class="text-center" th:text="${item.date}">1.1.2024.</td>
+                    <td class="text-center" th:text="${item.id}">ID</td>
+                    <td class="text-center" th:text="${#dates.format(item.date, 'dd.MM.yyyy HH:mm')}">1.1.2024.</td>
                     <td class="text-center" th:text="${item.systolicBloodPressure}">125</td>
                     <td class="text-center" th:text="${item.diastolicBloodPressure}">85</td>
                     <td class="text-center" th:text="${item.heartBeat}">65</td>
