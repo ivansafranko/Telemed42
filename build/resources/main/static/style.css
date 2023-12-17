@@ -1,0 +1,91 @@
+h1 {font-size: 42px;
+  font-weight: bold;
+  color: white;
+  background-color: #0d6e29;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input {
+    width: 90%;
+}
+
+.hospital-dark {
+    background-color: #0d6e29;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table td {
+    vertical-align: bottom;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #080808;
+    border: 2px solid #080808;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #daffb3 !important;
+}
+
+
+.custom-header {
+    border-radius: 5px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.rounded-table {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead.table th {
+    background-color: #0d6e29;
+    color: white;
+    vertical-align: top;
+}
+
+.table td {
+    vertical-align: bottom;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.login-margina {
+    margin-left: 5px;
+}
+
+.account-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #080808;
+    border: 2px solid #080808;
+    border-radius: 5px;
+}
